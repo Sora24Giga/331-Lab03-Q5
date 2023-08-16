@@ -3,7 +3,7 @@ import type { AxiosInstance, AxiosResponse } from 'axios'
 import type { Passenger } from '@/type'
 
 const apiClient: AxiosInstance = axios.create({
-  baseURL: 'https://my-json-server.typicode.com/se331-2022/passengerdb',
+  baseURL: import.meta.env.VITE_BACKEND_URL,
   withCredentials: false,
   headers: {
     Accept: 'application/json',
